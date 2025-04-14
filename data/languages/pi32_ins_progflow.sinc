@@ -263,10 +263,10 @@ cond1619: ""   is ins1619=0xE { tmp:1 = 1;                           export tmp;
 }
 
 #
-# rep rA { <N instrunction words> }
-# rep <N instruction words>, rA
+# rep count { <N instrunction words> }
+# rep <N instruction words>, count
 #
-:rep bra0507, imm0004 is group=0 & ins0812=0x12 & bra0507 & imm0004
+:rep bra0507, imm0004 is group=0 & ins0812=0x02 & bra0507 & imm0004
 {
 	RepeatBlock(bra0507:1, imm0004:1);
 }
